@@ -39,7 +39,6 @@ import static spark.Spark.*;
                 {
                     case "Hot 100":
 
-                    case "R and B": //Cant use & because I replaced them
                         try {
                             Document doc = Jsoup.connect("https://www.billboard.com/charts/hot-100")
                                     .get();
@@ -73,6 +72,8 @@ import static spark.Spark.*;
                         break;
 
                     case "Hip-Hop":
+
+                    case "R and B":
 
                         try {
                             Document doc = Jsoup.connect("https://www.billboard.com/charts/r-b-hip-hop-songs")
